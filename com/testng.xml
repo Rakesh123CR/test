@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite configfailurepolicy="continue" name="Suite" parallel="none">
+	<test name="Test" preserve-order="true">
+		<classes>
+			<class name="commonMethods.Testcases" />
+		</classes>
+		<methods>
+			<include name="login" priority="1" />
+			<include name="CreatePurchaseOrder" priority="2" />
+			<include name="EditPurchaseOrder" priority="3" />
+			<include name="Authorizeorder" priority="4" />
+			<include name="GoodsInward" priority="5" />
+			<include name="ConfirmReceipt" priority="6" />
+			<include name="Supplierorder" priority="7" />
+		</methods>
+	</test>
+	<listeners>
+		<listener
+			class-name="atu.testng.reports.listeners.ATUReportsListener" />
+		<listener
+			class-name="atu.testng.reports.listeners.ConfigurationListener" />
+		<listener
+			class-name="atu.testng.reports.listeners.MethodListener" />
+	</listeners>
+</suite>
